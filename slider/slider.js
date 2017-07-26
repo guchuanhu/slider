@@ -23,6 +23,9 @@ $.sliderForUs = function (options) {
         };
         this.mount = function(){
             var item = $("#"+options.id);
+            if("ontouchend" in document === false){
+                alert("请在移动设备中查看效果。");
+            }
             item.on("touchstart",function (event) {
                 this.moveData.orgX = event.touches[0].pageX;
             }.bind(this)).on("touchmove",function (event) {

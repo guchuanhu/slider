@@ -16,10 +16,10 @@
 <script>
     $(function () {
         $.sliderForUs({
-            id:"slider1",
-            tips:["验证成功","向右滑动验证"],
-            style:"slider-auth",
-            success:function(){
+            id:"slider1",//需要与标签sliderForUs中的id一致
+            tips:["验证成功","向右滑动验证"],//提示语设置
+            style:"slider-auth",//给定样式，可以自定义class
+            success:function(){//滑动成功后的回调函数
                 alert("You are allowed to pass!");
             }
         }).init();

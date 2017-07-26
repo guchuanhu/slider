@@ -27,6 +27,7 @@ $.sliderForUs = function (options) {
                 alert("请在移动设备中查看效果。");
             }
             item.on("touchstart",function (event) {
+                console.log(event);
                 this.moveData.orgX = event.touches[0].pageX;
             }.bind(this)).on("touchmove",function (event) {
                 event.preventDefault();
